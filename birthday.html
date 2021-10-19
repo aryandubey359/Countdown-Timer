@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" type="text/css" href="birthday.css" />
+    <script src="./birthday.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3
+        style="
+          font-size: 2rem;
+          text-decoration: underline;
+          margin: 0px 0px 24px;
+        "
+      >
+        Customised Timer for your Birthday<br />
+      </h3>
+      <div class="birthdate">
+        <div class="form-group">
+          <h3>Enter your next brthday!</h3>
+          <input type="date" class="form-control" id="birthday" />
+          <button type="submit" class="button" onclick="countdown()">Submit</button>
+        </div>
+        <div class="countdown">
+          <div class="daysc">
+            <p class="text" id="days">0</p>
+            <span>days</span>
+          </div>
+          <div class="hoursc">
+            <p class="text" id="hours">0</p>
+            <span>hours</span>
+          </div>
+          <div class="minutesc">
+            <p class="text" id="minutes">0</p>
+            <span>minutes</span>
+          </div>
+          <div class="secondsc">
+            <p class="text" id="seconds">0</p>
+            <span>seconds</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

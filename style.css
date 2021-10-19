@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+body {
+  display: flex;
+  margin: 2rem;
+  justify-content: center;
+  font-family: "IM Fell English SC", serif;
+  background-image: url("./Skyline.jpg");
+  background-size: 100rem;
+  min-height: 100vh;
+  color: white;
+  flex-direction: row;
+}
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+a {
+  color: thistle;
+}
+h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 2rem;
+}
+.countdown {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  border: 2px solid white;
+  margin: 2rem auto;
+}
+.text {
+  margin: 0 5rem;
+  font-size: 3rem;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.birthday {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.button:hover {
+  cursor: pointer;
+}
+.button {
+  background-color: #4caf50; 
+  border: none;
+  color: white;
+  padding: 10px 17px;
+  margin: 5px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
