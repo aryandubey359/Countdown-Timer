@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
+      crossorigin="anonymous"
+    />
+
+    <title>Date & Time</title>
+  </head>
+  <script>
+    let a, date, time, utc, off;
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    setInterval(() => {
+      a = new Date();
+      date = a.toLocaleDateString(undefined, options);
+      time = a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds();
+      utc = a.getUTCHours() + ':' + a.getUTCMinutes() + ':' + a.getUTCSeconds();
+      off = a.getTimezoneOffset();
+      document.getElementById("time").innerHTML = time + " on " + date;
+      document.getElementById("UTC").innerHTML = utc;
+      document.getElementById("off").innerHTML = off + " minutes";
+    }, 1000);
+  </script>
+  <style>
+    body{
+      margin-top: 5px;
+    }
+    #time, #UTC, #off {
+      font-weight: bolder;
+    }
+    .container {
+      border: 5px solid black;
+      background: beige;
+      color: black;
+    }
+  </style>
+  <body>
+    <div class="jumbotron jumbotron-fluid my-5">
+      <div class="container">
+        <h1 class="display-4">
+          <u><b>Date & Time</b></u>
+        </h1>
+        <p class="lead">
+          Current Date and Time at you location is: <span id= "time"></span><br>
+          UTC Time: <span id= "UTC"></span><br>
+          Time Offset: <span id= "off"></span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
